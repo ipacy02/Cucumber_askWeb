@@ -11,7 +11,8 @@ Feature: AddToCart functionality
 
     Examples:
     |index|
-    |0  |
-    |1  |
+    |4  |
+    |2  |
+
 
 

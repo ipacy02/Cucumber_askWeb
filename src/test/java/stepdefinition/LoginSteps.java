@@ -28,8 +28,8 @@ public class LoginSteps {
 
     @When("I enter valid credentials")
     public void i_enter_valid_credentials() {
-        driver.findElement(By.name("username")).sendKeys("mugisha");
-        driver.findElement(By.name("password")).sendKeys("mugisha");
+        driver.findElement(By.name("username")).sendKeys("mukamana");
+        driver.findElement(By.name("password")).sendKeys("mukamana@20");
         driver.findElement(By.name("login")).click();
     }
 

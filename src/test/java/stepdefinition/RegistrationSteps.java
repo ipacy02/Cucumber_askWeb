@@ -55,4 +55,23 @@ public class RegistrationSteps {
         // Close browser
         driver.quit();
     }
+
+    @Then("I should see a registration error message")
+    public void i_should_see_a_registration_error_message() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        WebElement error = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                        By.cssSelector(".woocommerce-error")
+                )
+        );
+
+        String errorText = error.getText();
+        System.out.println("Error message: " + errorText);
+
+        assertTrue(errorText.contains("Error") || errorText.contains("required"));
+
+        driver.quit();
+    }
+
 }
