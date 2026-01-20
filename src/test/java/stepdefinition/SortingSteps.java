@@ -38,7 +38,6 @@ public class SortingSteps {
         wait.until(ExpectedConditions.elementToBeClickable(sortingDropdown));
         new Select(driver.findElement(sortingDropdown)).selectByValue(sortOption);
 
-
     }
 
     @Then("the products should be sorted accordingly")

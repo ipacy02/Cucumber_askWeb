@@ -12,5 +12,5 @@ Feature: Sliding the price range
     Examples:
       | Slide_min | Slide_max |
       | 20        | 50        |
-#      | 0         | 100       |
-#      | 40        | 80        |
+      | 0         | 100       |
+

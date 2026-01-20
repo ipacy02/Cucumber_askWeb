@@ -54,18 +54,11 @@ public class CategorySteps {
         String pageTitle = driver.getTitle(); //Men's Jeans
         Assert.assertTrue(pageTitle.contains(actualHeading));
     }
-
-
-
     @After
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
     }
-
-
-
-
 }
 

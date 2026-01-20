@@ -10,9 +10,9 @@ Feature: AddToCart functionality
     Then I should be redirected to the cart page
 
     Examples:
-    |index|
-    |4  |
-    |2  |
+      | index |
+      | 3     |
+      | 1     |
 
 
 

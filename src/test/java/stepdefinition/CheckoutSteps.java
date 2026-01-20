@@ -38,8 +38,6 @@ public class CheckoutSteps {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
-
-
     @Given("I have added a product to my cart")
     public void i_have_added_a_product_to_my_cart() {
 
@@ -92,8 +90,6 @@ public class CheckoutSteps {
 
     @And("I place the order")
     public void i_place_the_order() {
-//        WebElement placeOrderBtn = driver.findElement(placeOrder);
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", placeOrderBtn);
         wait.until(ExpectedConditions.elementToBeClickable(placeOrder)).click();
     }
 
