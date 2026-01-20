@@ -9,9 +9,9 @@ Feature: Sorting functionality
     Then the products should be sorted accordingly
 
     Examples:
-      | SortOption |
-      | price |
-#      | Sort by average rating       |
-#      | Sort by latest               |
-#      | Sort by price: low to high   |
-#      | Sort by price: high to low   |
+      | SortOption                 |
+      | price                      |
+      | Sort by average rating     |
+      | Sort by latest             |
+      | Sort by price: low to high |
+      | Sort by price: high to low |

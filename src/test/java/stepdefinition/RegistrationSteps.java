@@ -22,7 +22,6 @@ public class RegistrationSteps {
     public void i_am_in_the_registration_page_of_the_Ask_e_commerce_Application() {
         // Initialize Chrome driver
         driver = new ChromeDriver();
-
         driver.get("https://askomdch.com/");
 
         // Navigate to the account/registration page

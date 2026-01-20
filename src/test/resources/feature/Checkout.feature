@@ -1,5 +1,6 @@
 Feature: Checkout form
 
+
   As a customer
   I want to fill the checkout form
   So that I can place an order successfully

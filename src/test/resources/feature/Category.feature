@@ -10,15 +10,15 @@ Feature: Category functionality
     Examples:
       | Category_name       |
       | accessories         |
-#      | men                 |
-#      | mens-jeans          |
-#      | mens-shirts         |
-#      | mens-shoes          |
-#      | purses-and-handbags |
-#      | women               |
-#      | womens-jeans        |
-#      | womens-shirts       |
-#      | womens-shoes        |
+      | men                 |
+      | mens-jeans          |
+      | mens-shirts         |
+      | mens-shoes          |
+      | purses-and-handbags |
+      | women               |
+      | womens-jeans        |
+      | womens-shirts       |
+      | womens-shoes        |
 
 
 

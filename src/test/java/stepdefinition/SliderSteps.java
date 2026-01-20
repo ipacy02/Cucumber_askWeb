@@ -64,7 +64,6 @@ public class SliderSteps {
 
         String priceAfterSliding = driver.findElement(priceLabelLocator).getText();
         System.out.println("Price range after sliding: " + priceAfterSliding);
-
         // Assert that the price label actually changed
         assertNotEquals("Price range did not change after sliding!", priceBeforeSliding, priceAfterSliding);
     }

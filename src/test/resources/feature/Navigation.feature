@@ -9,6 +9,7 @@ Feature: Navigation functionality
     When I click on the "<Navigation>" link
     Then I should be redirected to the "<NavigationTitle>" page
 
+
     Examples:
       | Navigation  | NavigationTitle  |
       |Home         |AskOmDch         |

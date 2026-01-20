@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.Assert.assertTrue;
 
+
 public class NavigationSteps {
 
     private WebDriver driver;
@@ -30,7 +31,6 @@ public class NavigationSteps {
         String pageTitle = driver.getTitle();
         System.out.println(pageTitle);
         assertTrue("Page title does not contain: " + navigation, pageTitle.contains(navigation));
-
         // Close browser
         driver.quit();
     }

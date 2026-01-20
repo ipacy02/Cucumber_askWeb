@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
@@ -44,8 +43,6 @@ public class LoginSteps {
 
         // Get the text from the account content
         String pageText = accountContent.getText();
-
-
         assertTrue(pageText.contains("shipping and billing addresses"));
 
         // Close the browser
