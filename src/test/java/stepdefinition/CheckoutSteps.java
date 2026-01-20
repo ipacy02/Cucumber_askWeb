@@ -76,8 +76,7 @@ public class CheckoutSteps {
     public void i_fill_in_the_checkout_form_with_the_following_details(DataTable dataTable) {
         Map<String, String> data = dataTable.asMaps().get(0);
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});",
-                driver.findElement(firstName));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(firstName));
         driver.findElement(firstName).sendKeys(data.get("firstName"));
         driver.findElement(lastName).sendKeys(data.get("lastName"));
         driver.findElement(company).sendKeys(data.get("company"));
@@ -93,15 +92,15 @@ public class CheckoutSteps {
 
     @And("I place the order")
     public void i_place_the_order() {
-        WebElement placeOrderBtn = driver.findElement(placeOrder);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", placeOrderBtn);
-        wait.until(ExpectedConditions.elementToBeClickable(placeOrderBtn)).click();
+//        WebElement placeOrderBtn = driver.findElement(placeOrder);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", placeOrderBtn);
+        wait.until(ExpectedConditions.elementToBeClickable(placeOrder)).click();
     }
 
     @Then("the order should be placed successfully")
     public void the_order_should_be_placed_successfully() {
         String expectedResult = "Thank you. Your order has been received.";
         String actualResult = wait.until(ExpectedConditions.visibilityOfElementLocated(confirmationMessage)).getText();
-        Assert.assertEquals("Order was not placed successfully", expectedResult, actualResult);
+        Assert.assertEquals("Order was not placed successfully", actualResult, expectedResult);
     }
 }
